@@ -13,7 +13,7 @@ type MerkleNode struct {
 	Left 	*MerkleNode
 	Right 	*MerkleNode
 	Data 	[]byte
-	mNode   []byte
+	Hash   []byte
 }
 
 func MerkleTreeRoot(left, right, content []byte) (headRoot []byte) {
